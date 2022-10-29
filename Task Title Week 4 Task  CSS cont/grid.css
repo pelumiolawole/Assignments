@@ -1,0 +1,44 @@
+/*css for CSS Grid Layout Task*/
+
+
+.item1 { 
+    grid-area: header;
+    background-color: #021b1d;
+    
+}
+.item2 {
+    grid-area: menu;
+    background-color: rgb(11, 172, 118); 
+    
+  }
+.item3 { 
+    grid-area: main;
+    background-color: rgb(223, 130, 130);
+   
+  }
+.item4 { 
+    grid-area: right;
+    background-color: rgb(207, 134, 24);
+    
+}
+.item5 { 
+    grid-area: footer;
+    background-color: rgb(207, 134, 24);
+    
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header main'
+    'menu right right right'
+    'menu footer footer footer';
+  gap: 20px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 75px;
+}
